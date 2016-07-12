@@ -1,0 +1,15 @@
+mkdir temperature_classes
+
+javac -classpath  /usr/local/hadoop/hadoop-core-1.2.1.jar:./temperature_classes -d temperature_classes MaxTemperatureMapper.java
+
+javac -classpath  /usr/local/hadoop/hadoop-core-1.2.1.jar:./temperature_classes -d temperature_classes MaxTemperatureReducer.java
+
+javac -classpath  /usr/local/hadoop/hadoop-core-1.2.1.jar:./temperature_classes -d temperature_classes MaxTemperature.java
+
+jar -cvf temperature.jar -C  temperature_classes/  .
+
+hadoop dfs -copyFromLocal /home/student024/input/combinedYears.txt /user/student024/input/combinedYears.txt
+
+hadoop jar /home/student024/temperature.jar edu.cmu.andrew.mm6.MaxTemperature  /user/student024/input/combinedYears.txt /user/student024/Task4Output
+
+hadoop dfs -getmerge /user/student024/output ./

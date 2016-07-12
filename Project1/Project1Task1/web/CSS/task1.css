@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 24, 2015, 12:16:39 PM
+    Author     : changyilong
+*/
+.index{
+    margin-top: 15%;
+}
+
+.title{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.search{
+    display:inline;
+}
+.search .submit{
+    width:8%;
+    font-size: large;
+    height:7%;
+    background-color: #cacece;
+    border: solid thin ;
+    margin: 0 0 1% 1%;
+    vertical-align: middle;
+}
+
+
+.search .word{
+    width:50%;
+    height:7%;
+    font-size: 120%;
+    margin: 0 0 1% 23%;
+    vertical-align: middle;
+    border: solid thin graytext;
+    padding:0 1% 0 1%; 
+}
+.word:focus{
+    border-color: appworkspace;
+}
+
+
+.hashFunction {
+    display: none;
+}
+
+.hashFunction {
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 16px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+}
+
+.hashFunction:checked:after {
+    content: ' ';
+    width: 24px;
+    height: 24px;
+    left: 4px;
+    top: 4px;
+    border-radius: 50px;
+    position: absolute;
+    background: #99a1a7;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+    text-shadow: 0px;
+    font-size: 32px; 
+}
+
+
+.hashType{
+    text-align: center;
+    display: block;
+    vertical-align: middle;
+}
+.hashFunction + label{
+    font-size: 120%;
+    margin:0 3% 0 1%;
+    text-align: center;
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Type an IP to search its location.</string>
+    <string name="app_name">Host IP Info</string>
+    <string name="action_settings">Action</string>
+    <string name="found">Here is the location of the IP </string>
+    <string name="not_found">Sorry, I could not find the location of the IP </string>
+    <string name="submit">Submit</string>
+</resources>

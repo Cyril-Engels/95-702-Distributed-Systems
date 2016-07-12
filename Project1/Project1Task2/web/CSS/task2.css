@@ -1,0 +1,63 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 24, 2015, 12:16:39 PM
+    Author     : changyilong
+*/
+.index{
+    margin-top: 15%;
+}
+
+.title{
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 1%;
+}
+
+.calc{
+    display:inline;
+    margin-top: 3%;
+}
+
+.calc .submit{
+    width:10%;
+    font-size: 150%;
+    height:100%;
+    background-color: #cacece;
+    border: solid thin;
+    margin: 0 0 1px 1%;
+    vertical-align: middle;
+}
+
+.numbers {
+    display: inline;
+    vertical-align: middle;
+    height:100%;
+}
+
+.calc .number1{
+    width:15%;
+    height:20%;
+    font-size: 120%;
+    margin: 0 1% 0 15%;
+    vertical-align: middle;
+    border: solid thin graytext;
+    padding:0.5% 1% 0.5% 0.5%; 
+}
+
+.calc .number2{
+    width:15%;
+    height:20%;
+    font-size: 120%;
+    margin: 0 1% 0 1%;
+    vertical-align: middle;
+    border: solid thin graytext;
+    padding:0.5% 1% 0.5% 0.5%; 
+}
+.operations {
+    font-size: large;
+    height:100%;
+}
